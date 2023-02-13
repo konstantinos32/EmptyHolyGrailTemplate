@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:ital,wght@1,300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +10,7 @@
     display: grid;
     grid-template-columns:repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
+    font-family: 'Poppins', sans-serif;
 }
 
 .NavBar {
@@ -36,6 +39,24 @@
     grid-row: 2/span 10;
 }
 
-.el{
-    border: 1px rgba(0, 0, 0, 0.06)solid;
+.el {
+    border: 1px rgba(0, 0, 0, 0.06) solid;
+}
+
+.FlexNav, .NavBrand {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.FlexNav {
+    height: 100%;
+}
+
+.NavBrand {
+    gap: 3rem;
+}
+
+.NavUl {
+    list-style: none;
 }
