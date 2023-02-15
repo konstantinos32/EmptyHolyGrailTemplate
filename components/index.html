@@ -30,12 +30,23 @@
         </div>
     </div>
     <div class="el Content">
-        <!--        <h1> Hello World</h1>-->
+        <div class="TodoListWrapper">
+            <div class="TodoListFunction">
+                <input id="TodoInput" type="text" placeholder="Write down your Todos here 🖍">
+                <button onclick="AddTodo()" class="AddTodoBtn">➕</button>
+            </div>
+            <div class="TodoListBody">
+                <ul class="myUl">
+
+                </ul>
+            </div>
+        </div>
+
     </div>
     <div class="el LeftSidePanel">
         <div class="FunctionContainer">
             <div class="TodoListFunction">
-                <button class="ShowTodoList">Create Todos 🖍</button>
+                <button onclick="ShowTodos()" class="ShowTodoList">Create Todos 🖍</button>
                 <hr/>
                 <p class="ButtonDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut .</p>
             </div>
