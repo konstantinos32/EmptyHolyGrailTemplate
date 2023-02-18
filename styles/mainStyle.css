@@ -69,7 +69,7 @@
 
 }
 
-.ShowTodoList,.ShowContactForm {
+.ShowTodoList, .ShowContactForm {
     width: 100%;
     height: 40%;
     margin-bottom: 20px;
@@ -81,4 +81,12 @@
     padding-top: 4%;
     padding-left: 5%;
     text-align: justify;
+}
+
+.TodoListWrapper {
+    display: block;
+}
+
+.TodosStyle {
+    list-style: none;
 }
