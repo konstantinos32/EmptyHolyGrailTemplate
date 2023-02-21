@@ -41,6 +41,24 @@
                 </ul>
             </div>
         </div>
+        <!--        Contact Form HTML-->
+        <form id="contact_form">
+            <!--            sender name-->
+            <label>
+                <input type="text" name="from_name" placeholder="Tell us who you are😀">
+            </label>
+            <!--            sender email-->
+            <label>
+                <input type="email" name="from_email" placeholder="Where to find you?">
+            </label>
+            <!--            sender message-->
+            <label>
+                <input type="text" name="message" placeholder="Your message📬">
+            </label>
+            <!--            submit button-->
+            <button type="submit" class="sbmtButton">Send Form🚀</button>
+        </form>
+
 
     </div>
     <div class="el LeftSidePanel">
@@ -63,5 +81,16 @@
 </div>
 <!--Js imports and Libs-->
 <script src="../backend/script.js"></script>
+<!--CDN for EmailJS-->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<!--This function should Initialize EmailJS with the public Api Key-->
+<script type="text/javascript">
+    (function () {
+        emailjs.init("yZ9gB5CTCdFCk586e");
+
+    })();
+</script>
 </body>
 </html>

@@ -2,6 +2,12 @@
 let todoListUl = document.querySelector(".myUl");
 let todoListWrapper = document.getElementById("TodoListWrapper");
 
+let ServiceId = "service_bhytemr";
+let TemplateId = "template_ii54qll";
+let formSubmitButton = document.querySelector(".sbmtButton")
+
+//This algorithm is used in the TodoList
+
 function AddTodo() {
     let inputField = document.getElementById("TodoInput").value;
     if (inputField === "") {
@@ -16,7 +22,12 @@ function AddTodo() {
     }
 }
 
+//Algorithm for the Contact Form
+formSubmitButton.addEventListener("submit", () => {
 
+});
+
+//Show and Hide TodoList
 function ShowTodos() {
     if (todoListWrapper.style.display === "none") {
         todoListWrapper.style.display = "block"
