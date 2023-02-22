@@ -4,7 +4,10 @@ let todoListWrapper = document.getElementById("TodoListWrapper");
 
 let ServiceId = "service_bhytemr";
 let TemplateId = "template_ii54qll";
-let formSubmitButton = document.querySelector(".sbmtButton")
+let publicApiId = "yZ9gB5CTCdFCk586e";
+let formSubmitButton = document.querySelector(".sbmtButton");
+let theForm = document.getElementById("contact_form");
+
 
 //This algorithm is used in the TodoList
 
@@ -23,8 +26,16 @@ function AddTodo() {
 }
 
 //Algorithm for the Contact Form
-formSubmitButton.addEventListener("submit", () => {
+theForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    emailjs.sendForm(ServiceId, TemplateId, e.target)
+        .then(function () {
+            console.log("Message sent succesfully")
+            alert("Message sent succesfully")
+        }, function (error) {
+            console.log("error");
 
+        })
 });
 
 //Show and Hide TodoList
