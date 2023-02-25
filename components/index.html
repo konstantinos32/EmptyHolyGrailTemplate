@@ -26,7 +26,7 @@
                 </div>
             </div>
             <div class="NavAction">
-                <button class="NavBtn">Contact
+                <button class="NavBtn btn btn-outline-dark btn-sm">Contact
                 </button>
             </div>
         </div>
@@ -34,8 +34,15 @@
     <div class="el Content">
         <div class="TodoListWrapper" id="TodoListWrapper">
             <div class="TodoListFunction">
-                <input class="form-control" id="TodoInput" type="text" placeholder="Write down your Todos here 🖍">
-                <button onclick="AddTodo()" class="AddTodoBtn">➕</button>
+                <div class="row">
+                    <div class="col-10">
+                        <input class="form-control" id="TodoInput" type="text"
+                               placeholder="Write down your Todos here 🖍">
+                    </div>
+                    <div class="col-2">
+                        <button onclick="AddTodo()" class="btn btn-primary btn-sm AddTodoBtn">➕</button>
+                    </div>
+                </div>
             </div>
             <div class="TodoListBody">
                 <ul class="myUl">
@@ -47,18 +54,20 @@
         <form id="contact_form">
             <!--            sender name-->
             <label>
-                <input class="form-control" type="text" name="from_name" placeholder="Tell us who you are😀">
+                <input class="required form-control" type="text" name="from_name"
+                       placeholder="Tell us who you are😀">
             </label>
             <!--            sender email-->
             <label>
-                <input class="form-control" type="email" name="from_email" placeholder="Where to find you?">
+                <input class="required form-control" type="email" name="from_email"
+                       placeholder="Where to find you?">
             </label>
             <!--            sender message-->
             <label>
-                <input class="form-control" type="text" name="message" placeholder="Your message📬">
+                <input class="required form-control" type="text" name="message" placeholder="Your message📬">
             </label>
             <!--            submit button-->
-            <button type="submit" class="sbmtButton">Send Form🚀</button>
+            <button type="submit" class="btn btn-danger btn-sm sbmtButton">Send Form🚀</button>
         </form>
 
 
@@ -66,12 +75,12 @@
     <div class="el LeftSidePanel">
         <div class="FunctionContainer">
             <div class="TodoListFunction">
-                <button onclick="ShowTodos()" class="ShowTodoList">Create Todos 🖍</button>
+                <button onclick="ShowTodos()" class="btn btn-secondary ShowTodoList">Create Todos 🖍</button>
                 <hr/>
                 <p class="ButtonDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut .</p>
             </div>
             <div class="ContactFormFunction">
-                <button class="ShowContactForm">Say Hello!🖐</button>
+                <button onclick="ShowForm()" class="btn btn-secondary ShowContactForm">Say Hello!🖐</button>
                 <hr/>
                 <p class="ButtonDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut.
                 </p>
